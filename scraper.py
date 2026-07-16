@@ -1,36 +1,55 @@
 import urllib.request
 import json
+import sys
 
-# Oficjalny endpoint Valve dla Europy
 VALVE_URL = "https://www.dota2.com/webapi/ILeaderboard/GetDivisionLeaderboard/v0001?division=europe"
 
 def run_agent():
     print("Rozpoczynam pobieranie danych od Valve...")
     
-    # Dodajemy nagłówek User-Agent, żeby Valve nie zablokowało zapytania jako bota
-    req = urllib.request.Request(VALVE_URL, headers={'User-Agent': 'Mozilla/5.0'})
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Accept': 'application/json'
+    }
+    req = urllib.request.Request(VALVE_URL, headers=headers)
     
     try:
         with urllib.request.urlopen(req) as response:
-            data = json.loads(response.read().decode())
+            raw_response = response.read().decode()
+            print(f"Odpowiedź pobrana pomyślnie. Długość: {len(raw_response)} znaków.")
+            data = json.loads(raw_response)
     except Exception as e:
-        print(f"Błąd podczas pobierania danych: {e}")
-        return
+        print(f"Błąd krytyczny podczas pobierania danych: {e}")
+        sys.exit(1) 
 
-    # Filtrujemy tylko graczy, którzy mają ustawiony kraj na Polskę ("pl")
-    polish_players = [
-        player for player in data.get("leaderboard", [])
-        if player.get("country", "").lower() == "pl"
-    ]
+    # 1. Sprawdzamy klucze w głównym JSONie
+    print("Klucze od Valve:", list(data.keys()))
     
-    print(f"Znaleziono {len(polish_players)} graczy z Polski w Top 5000.")
+    # 2. Pobieramy tablicę graczy
+    leaderboard = data.get("leaderboard", [])
+    print(f"Znalazłem {len(leaderboard)} graczy w głównej tabeli.")
+    
+    # 3. Sprawdzamy, jak wygląda pierwszy gracz na liście
+    if len(leaderboard) > 0:
+        print("Struktura przykładowego gracza:", json.dumps(leaderboard[0], indent=2))
+    else:
+        print("UWAGA: Valve nie zwróciło żadnych graczy! Pełna odpowiedź to:")
+        print(json.dumps(data, indent=2))
 
-    # Zapisujemy wynik do pliku
+    # 4. Bezpieczne filtrowanie Polaków
+    polish_players = []
+    for p in leaderboard:
+        country = p.get("country")
+        # Zabezpieczenie przed wartościami null / pustymi ciągami
+        if country and isinstance(country, str) and country.lower() == "pl":
+            polish_players.append(p)
+    
+    print(f"Wyfiltrowano {len(polish_players)} graczy z Polski w Top 5000.")
+
+    # 5. Zapis
     output_filename = "polish_top.json"
     with open(output_filename, "w", encoding="utf-8") as f:
         json.dump(polish_players, f, indent=2)
-        
-    print(f"Zapisano dane do {output_filename}")
 
 if __name__ == "__main__":
     run_agent()
