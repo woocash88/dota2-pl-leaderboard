@@ -2,7 +2,7 @@ import urllib.request
 import json
 import sys
 
-VALVE_URL = "https://www.dota2.com/webapi/ILeaderboard/GetDivisionLeaderboard/v0001?division=europe"
+VALVE_URL = "https://www.dota2.com/webapi/ILeaderboard/GetDivisionLeaderboard/v0001?division=europe&leaderboard=0"
 
 def run_agent():
     print("Rozpoczynam pobieranie danych od Valve...")
