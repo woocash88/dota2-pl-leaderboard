@@ -36,12 +36,22 @@ def run_agent():
         print("UWAGA: Valve nie zwróciło żadnych graczy! Pełna odpowiedź to:")
         print(json.dumps(data, indent=2))
 
-    # 4. Bezpieczne filtrowanie Polaków
+   # 4. Bezpieczne filtrowanie Polaków + Biała Lista (Override)
+    # Wpisz tutaj dokładne nicki graczy, których chcesz dodać
+    WHITELIST = ["Gracz1", "Gracz2", "Gracz3"] 
+    
     polish_players = []
     for p in leaderboard:
         country = p.get("country")
-        # Zabezpieczenie przed wartościami null / pustymi ciągami
-        if country and isinstance(country, str) and country.lower() == "pl":
+        name = p.get("name")
+        
+        # Sprawdzamy, czy gracz ma kraj PL
+        is_polish_by_country = country and isinstance(country, str) and country.lower() == "pl"
+        
+        # Sprawdzamy, czy gracz jest na naszej liście wyjątków
+        is_on_whitelist = name in WHITELIST
+        
+        if is_polish_by_country or is_on_whitelist:
             polish_players.append(p)
     
     print(f"Wyfiltrowano {len(polish_players)} graczy z Polski w Top 5000.")
