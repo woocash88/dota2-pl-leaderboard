@@ -37,7 +37,7 @@ def run_agent():
         print(json.dumps(data, indent=2))
 
    # 4. Bezpieczne filtrowanie Polaków + Biała/Czarna Lista
-    WHITELIST = ["Gracz1", "Gracz2"] 
+    WHITELIST = ["Jacob^", "Ekki", "Kubanos", "Miyagi", "OnlyMatt", "RaizQT", "Ged"] 
     BLACKLIST = ["Oszust1", "FakePolak"] # <-- Tutaj wpisujesz trolli
     
     polish_players = []
