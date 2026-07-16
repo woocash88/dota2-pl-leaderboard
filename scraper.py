@@ -36,22 +36,27 @@ def run_agent():
         print("UWAGA: Valve nie zwróciło żadnych graczy! Pełna odpowiedź to:")
         print(json.dumps(data, indent=2))
 
-   # 4. Bezpieczne filtrowanie Polaków + Biała Lista (Override)
-    # Wpisz tutaj dokładne nicki graczy, których chcesz dodać
-    WHITELIST = ["Kubanos", "Jacob^", "Miyagi", "OnlyMatt", "RaizQT", "Ged"] 
+   # 4. Bezpieczne filtrowanie Polaków + Biała/Czarna Lista
+    WHITELIST = ["Gracz1", "Gracz2"] 
+    BLACKLIST = ["Oszust1", "FakePolak"] # <-- Tutaj wpisujesz trolli
     
     polish_players = []
     for p in leaderboard:
         country = p.get("country")
         name = p.get("name")
         
-        # Sprawdzamy, czy gracz ma kraj PL
+        # 1. CZARNA LISTA: Sprawdzamy, czy gracz jest zablokowany
+        is_blacklisted = name and name.lower() in [b.lower() for b in BLACKLIST]
+        if is_blacklisted:
+            continue # Jeśli jest na czarnej liście, całkowicie go ignorujemy i idziemy dalej
+            
+        # 2. STANDARDOWE SPRAWDZENIE: Czy gracz ma kraj PL?
         is_polish_by_country = country and isinstance(country, str) and country.lower() == "pl"
         
-        # Sprawdzamy, czy gracz jest na naszej liście wyjątków
-        # Zamieniamy wszystkie nicki na małe litery przed porównaniem
+        # 3. BIAŁA LISTA: Czy gracz jest na liście wyjątków?
         is_on_whitelist = name and name.lower() in [w.lower() for w in WHITELIST]
         
+        # 4. WYNIK: Jeśli ma PL lub jest na białej liście (a nie odrzuciła go czarna lista) -> dodajemy
         if is_polish_by_country or is_on_whitelist:
             polish_players.append(p)
     
