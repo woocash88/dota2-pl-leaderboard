@@ -49,7 +49,8 @@ def run_agent():
         is_polish_by_country = country and isinstance(country, str) and country.lower() == "pl"
         
         # Sprawdzamy, czy gracz jest na naszej liście wyjątków
-        is_on_whitelist = name in WHITELIST
+        # Zamieniamy wszystkie nicki na małe litery przed porównaniem
+        is_on_whitelist = name and name.lower() in [w.lower() for w in WHITELIST]
         
         if is_polish_by_country or is_on_whitelist:
             polish_players.append(p)
