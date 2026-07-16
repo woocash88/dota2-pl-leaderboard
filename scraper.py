@@ -38,7 +38,7 @@ def run_agent():
 
    # 4. Bezpieczne filtrowanie Polaków + Biała Lista (Override)
     # Wpisz tutaj dokładne nicki graczy, których chcesz dodać
-    WHITELIST = ["Gracz1", "Gracz2", "Gracz3"] 
+    WHITELIST = ["Kubanos", "Jacob^", "Miyagi", "OnlyMatt", "RaizQT", "Ged"] 
     
     polish_players = []
     for p in leaderboard:
