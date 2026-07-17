@@ -10,44 +10,51 @@
     "country": "pl"
   },
   {
-    "rank": 359,
+    "rank": 107,
+    "name": "Ekki",
+    "team_id": 9895247,
+    "team_tag": "RE",
+    "country": "gb"
+  },
+  {
+    "rank": 356,
     "name": "Kubanos"
   },
   {
-    "rank": 446,
+    "rank": 443,
     "name": "Szajtek",
     "team_id": 9539470,
     "team_tag": "BOCIAN",
     "country": "pl"
   },
   {
-    "rank": 574,
+    "rank": 572,
     "name": "Jacob^"
   },
   {
-    "rank": 638,
+    "rank": 641,
     "name": "snax",
     "country": "pl"
   },
   {
-    "rank": 726,
+    "rank": 718,
     "name": "Boskey",
     "country": "pl"
   },
   {
-    "rank": 857,
-    "name": "bloodr4yne",
-    "country": "pl"
-  },
-  {
-    "rank": 876,
+    "rank": 875,
     "name": "Skins2",
     "team_id": 10108884,
     "team_tag": "Liquid",
     "country": "pl"
   },
   {
-    "rank": 1002,
+    "rank": 879,
+    "name": "bloodr4yne",
+    "country": "pl"
+  },
+  {
+    "rank": 1000,
     "name": "Maheshwara",
     "team_id": 8698499,
     "team_tag": "Lycoris",
@@ -61,22 +68,22 @@
     "country": "pl"
   },
   {
-    "rank": 1423,
+    "rank": 1421,
     "name": "dave",
     "country": "pl"
   },
   {
-    "rank": 1787,
+    "rank": 1732,
     "name": "Miyagi",
     "country": "af"
   },
   {
-    "rank": 1889,
+    "rank": 1886,
     "name": "\u5c0f\u4e11",
     "country": "pl"
   },
   {
-    "rank": 2605,
+    "rank": 2607,
     "name": "OnlyMatt",
     "team_id": 10144719,
     "team_tag": "GW"
@@ -86,35 +93,35 @@
     "name": "RaizQT"
   },
   {
-    "rank": 3590,
-    "name": "=]",
-    "team_id": 9279351,
-    "team_tag": "CHUI",
-    "country": "pl"
-  },
-  {
-    "rank": 3630,
-    "name": "white",
-    "country": "pl"
-  },
-  {
-    "rank": 3630,
+    "rank": 3504,
     "name": "zys",
     "team_id": 9860803,
     "team_tag": "star",
     "country": "pl"
   },
   {
-    "rank": 4030,
+    "rank": 3593,
+    "name": "=]",
+    "team_id": 9279351,
+    "team_tag": "CHUI",
+    "country": "pl"
+  },
+  {
+    "rank": 3688,
+    "name": "white",
+    "country": "pl"
+  },
+  {
+    "rank": 4036,
     "name": "Ykiubi",
     "country": "pl"
   },
   {
-    "rank": 4076,
+    "rank": 4079,
     "name": "Ged"
   },
   {
-    "rank": 4094,
+    "rank": 4097,
     "name": "jerk god",
     "country": "pl"
   },
@@ -126,34 +133,34 @@
     "country": "pl"
   },
   {
-    "rank": 4703,
+    "rank": 4707,
     "name": "Ciptok",
     "team_id": 9539470,
     "team_tag": "BOCIAN",
     "country": "pl"
   },
   {
-    "rank": 4725,
+    "rank": 4726,
     "name": "Zaop",
     "team_id": 1936688,
     "team_tag": "MT",
     "country": "pl"
   },
   {
-    "rank": 4827,
+    "rank": 4828,
     "name": "babro",
     "country": "pl"
   },
   {
     "rank": 4891,
-    "name": "upset",
-    "country": "pl"
-  },
-  {
-    "rank": 4927,
     "name": "Duel maister",
     "team_id": 10157237,
     "team_tag": "KEO",
+    "country": "pl"
+  },
+  {
+    "rank": 4891,
+    "name": "upset",
     "country": "pl"
   }
 ]
