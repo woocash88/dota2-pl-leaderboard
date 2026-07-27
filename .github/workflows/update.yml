@@ -28,6 +28,12 @@ jobs:
       - name: Run Scraper Script
         run: python scraper.py
 
+      - name: Sync to Supabase
+        env:
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: python sync_to_supabase.py
+
       - name: Commit and Push changes
         run: |
           git config --global user.name "Leaderboard-Agent"
