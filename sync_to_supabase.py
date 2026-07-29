@@ -95,22 +95,23 @@ def run_sync():
             failed += 1
             print(f"Failed to upsert '{name}': {e}")
 
-    # Cleanup: official entries no longer in the fetched list lose their rank
-    # (dropped out of the top 5000) rather than being deleted.
-    stale_entries = request("GET", "?select=id,name&is_official_leaderboard=eq.true") or []
+    # Cleanup: official (top-5000-only) entries no longer in the fetched list
+    # are deleted outright — a player can drop out via inactivity or by
+    # changing their nick (whitelist entries are matched by name too, so a
+    # rename has the same effect). Without a steam_id there's no way to keep
+    # tracking them, so leaving a null-rank "Nieznana ranga" row behind would
+    # just be a stale ghost entry. Rows that DO have a steam_id (the player
+    # joined the ranking themselves) are left alone — those are tracked via
+    # OpenDota independently of top-5000 membership.
+    stale_entries = request("GET", "?select=id,name,steam_id&is_official_leaderboard=eq.true") or []
     cleaned = 0
     for entry in stale_entries:
-        if entry["name"] not in fetched_names:
+        if entry["name"] not in fetched_names and not entry.get("steam_id"):
             try:
-                request(
-                    "PATCH",
-                    f"?id=eq.{entry['id']}",
-                    body={"leaderboard_rank": None, "updated_at": now_iso()},
-                    prefer="return=minimal",
-                )
+                request("DELETE", f"?id=eq.{entry['id']}")
                 cleaned += 1
             except RuntimeError as e:
-                print(f"Failed to clear stale entry '{entry['name']}': {e}")
+                print(f"Failed to delete stale entry '{entry['name']}': {e}")
 
     print(
         "Summary:",
