@@ -1,34 +1,27 @@
 [
   {
-    "rank": 5,
+    "rank": 4,
     "name": "Jankos",
     "country": "pl"
   },
   {
-    "rank": 82,
+    "rank": 83,
     "name": "Ekki",
     "country": "pl"
-  },
-  {
-    "rank": 107,
-    "name": "Ekki",
-    "team_id": 9895247,
-    "team_tag": "RE",
-    "country": "gb"
   },
   {
     "rank": 313,
     "name": "Kubanos"
   },
   {
-    "rank": 460,
+    "rank": 487,
     "name": "Szajtek",
     "team_id": 9539470,
     "team_tag": "BOCIAN",
     "country": "pl"
   },
   {
-    "rank": 707,
+    "rank": 706,
     "name": "Boskey",
     "country": "pl"
   },
@@ -40,31 +33,31 @@
     "country": "pl"
   },
   {
-    "rank": 1065,
+    "rank": 1061,
     "name": "Maheshwara",
     "team_id": 8698499,
     "team_tag": "Lycoris",
     "country": "pl"
   },
   {
-    "rank": 1066,
+    "rank": 1064,
     "name": "bloodr4yne",
     "country": "pl"
   },
   {
-    "rank": 1334,
+    "rank": 1335,
     "name": "Songoas",
     "team_id": 9512856,
     "team_tag": "PL",
     "country": "pl"
   },
   {
-    "rank": 1403,
+    "rank": 1431,
     "name": "dave",
     "country": "pl"
   },
   {
-    "rank": 1671,
+    "rank": 1674,
     "name": "Miyagi",
     "country": "af"
   },
@@ -74,69 +67,69 @@
     "country": "pl"
   },
   {
-    "rank": 2780,
+    "rank": 2712,
     "name": "OnlyMatt",
     "team_id": 10144719,
     "team_tag": "GW"
   },
   {
-    "rank": 3158,
+    "rank": 3161,
     "name": "=]",
     "team_id": 9279351,
     "team_tag": "CHUI",
     "country": "pl"
   },
   {
-    "rank": 3172,
+    "rank": 3200,
     "name": "RaizQT"
   },
   {
-    "rank": 3467,
+    "rank": 3522,
     "name": "Bueno",
     "country": "pl"
   },
   {
-    "rank": 3550,
+    "rank": 3566,
     "name": "zys",
     "team_id": 9860803,
     "team_tag": "star",
     "country": "pl"
   },
   {
-    "rank": 3933,
-    "name": "Ged"
-  },
-  {
-    "rank": 3971,
+    "rank": 3977,
     "name": "white",
     "country": "pl"
   },
   {
-    "rank": 4164,
+    "rank": 4017,
+    "name": "Ged"
+  },
+  {
+    "rank": 4174,
     "name": "y\u014dkiro",
     "team_id": 9443803,
     "team_tag": "swan",
     "country": "pl"
   },
   {
-    "rank": 4474,
+    "rank": 4480,
     "name": "jerk god",
     "country": "pl"
   },
   {
-    "rank": 4622,
+    "rank": 4641,
     "name": "Ciptok",
     "team_id": 9539470,
     "team_tag": "BOCIAN",
     "country": "pl"
   },
   {
-    "rank": 4865,
+    "rank": 4875,
     "name": "babro",
     "country": "pl"
   },
   {
-    "rank": 4950,
+    "rank": 4936,
     "name": "1 noroll",
     "country": "pl"
   }
