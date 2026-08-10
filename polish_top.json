@@ -1,6 +1,6 @@
 [
   {
-    "rank": 21,
+    "rank": 20,
     "name": "Jankos",
     "country": "pl"
   },
@@ -10,97 +10,97 @@
     "country": "pl"
   },
   {
-    "rank": 225,
+    "rank": 226,
     "name": "Ekki",
     "team_id": 9895247,
     "team_tag": "RE",
     "country": "gb"
   },
   {
-    "rank": 375,
+    "rank": 376,
     "name": "Kubanos"
   },
   {
-    "rank": 500,
+    "rank": 501,
     "name": "Szajtek",
     "team_id": 9539470,
     "team_tag": "BOCIAN",
     "country": "pl"
   },
   {
-    "rank": 776,
+    "rank": 778,
     "name": "Boskey",
     "country": "pl"
   },
   {
-    "rank": 973,
+    "rank": 969,
     "name": "Jacob^"
   },
   {
-    "rank": 1024,
+    "rank": 1019,
     "name": "L1Z4RD",
     "team_id": 10108884,
     "team_tag": "Liquid",
     "country": "pl"
   },
   {
-    "rank": 1208,
+    "rank": 1211,
     "name": "dave",
     "country": "pl"
   },
   {
-    "rank": 1253,
+    "rank": 1250,
     "name": "bloodr4yne",
     "country": "pl"
   },
   {
-    "rank": 1475,
+    "rank": 1473,
     "name": "Songoas",
     "team_id": 9512856,
     "team_tag": "PL",
     "country": "pl"
   },
   {
-    "rank": 2171,
+    "rank": 2176,
     "name": "\u5c0f\u4e11",
     "country": "pl"
   },
   {
-    "rank": 2246,
+    "rank": 2244,
     "name": "Miyagi",
     "country": "af"
   },
   {
-    "rank": 2404,
+    "rank": 2303,
     "name": "Bueno",
     "country": "pl"
   },
   {
-    "rank": 2751,
+    "rank": 2758,
     "name": "tardus",
     "country": "pl"
   },
   {
-    "rank": 3486,
+    "rank": 3491,
+    "name": "1\u03b1mW7ll",
+    "country": "pl"
+  },
+  {
+    "rank": 3491,
     "name": "zys",
     "team_id": 9860803,
     "team_tag": "star",
     "country": "pl"
   },
   {
-    "rank": 3486,
-    "name": "1\u03b1mW7ll",
-    "country": "pl"
-  },
-  {
-    "rank": 4006,
+    "rank": 4016,
     "name": "Ciptok",
     "team_id": 9539470,
     "team_tag": "BOCIAN",
     "country": "pl"
   },
   {
-    "rank": 4422,
+    "rank": 4426,
     "name": "RaizQT"
   }
 ]
