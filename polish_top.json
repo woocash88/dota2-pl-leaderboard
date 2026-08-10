@@ -1,111 +1,106 @@
 [
   {
-    "rank": 20,
+    "rank": 21,
     "name": "Jankos",
     "country": "pl"
   },
   {
-    "rank": 110,
+    "rank": 111,
     "name": "Krinzhik",
     "country": "pl"
   },
   {
-    "rank": 243,
+    "rank": 225,
     "name": "Ekki",
     "team_id": 9895247,
     "team_tag": "RE",
     "country": "gb"
   },
   {
-    "rank": 378,
+    "rank": 375,
     "name": "Kubanos"
   },
   {
-    "rank": 502,
+    "rank": 500,
     "name": "Szajtek",
     "team_id": 9539470,
     "team_tag": "BOCIAN",
     "country": "pl"
   },
   {
-    "rank": 741,
+    "rank": 776,
     "name": "Boskey",
     "country": "pl"
   },
   {
-    "rank": 1017,
+    "rank": 973,
     "name": "Jacob^"
   },
   {
-    "rank": 1022,
+    "rank": 1024,
     "name": "L1Z4RD",
     "team_id": 10108884,
     "team_tag": "Liquid",
     "country": "pl"
   },
   {
-    "rank": 1249,
-    "name": "bloodr4yne",
-    "country": "pl"
-  },
-  {
-    "rank": 1253,
+    "rank": 1208,
     "name": "dave",
     "country": "pl"
   },
   {
-    "rank": 1523,
+    "rank": 1253,
+    "name": "bloodr4yne",
+    "country": "pl"
+  },
+  {
+    "rank": 1475,
     "name": "Songoas",
     "team_id": 9512856,
     "team_tag": "PL",
     "country": "pl"
   },
   {
-    "rank": 1950,
-    "name": "Miyagi",
-    "country": "af"
-  },
-  {
-    "rank": 2155,
+    "rank": 2171,
     "name": "\u5c0f\u4e11",
     "country": "pl"
   },
   {
-    "rank": 2334,
+    "rank": 2246,
+    "name": "Miyagi",
+    "country": "af"
+  },
+  {
+    "rank": 2404,
     "name": "Bueno",
     "country": "pl"
   },
   {
-    "rank": 2723,
+    "rank": 2751,
     "name": "tardus",
     "country": "pl"
   },
   {
-    "rank": 3264,
+    "rank": 3486,
     "name": "zys",
     "team_id": 9860803,
     "team_tag": "star",
     "country": "pl"
   },
   {
-    "rank": 3457,
+    "rank": 3486,
     "name": "1\u03b1mW7ll",
     "country": "pl"
   },
   {
-    "rank": 3924,
+    "rank": 4006,
     "name": "Ciptok",
     "team_id": 9539470,
     "team_tag": "BOCIAN",
     "country": "pl"
   },
   {
-    "rank": 4364,
+    "rank": 4422,
     "name": "RaizQT"
-  },
-  {
-    "rank": 4934,
-    "name": "jerk god",
-    "country": "pl"
   }
 ]
