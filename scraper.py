@@ -38,7 +38,7 @@ def run_agent():
 
    # 4. Bezpieczne filtrowanie Polaków + Biała/Czarna Lista
     WHITELIST = ["Jacob^", "Ekki", "Kubanos", "Miyagi", "OnlyMatt", "RaizQT", "Ged", "eejit", "L1Z4RD"] 
-    BLACKLIST = ["Oszust1", "FakePolak", "1αmW7ll", "bloodr4yne", "L1Z4RD" ] # <-- Tutaj wpisujesz trolli
+    BLACKLIST = ["Oszust1", "FakePolak", "1αmW7ll", "bloodr4yne", "L1Z4RD" , "Krinzhik"] # <-- Tutaj wpisujesz trolli
     
     polish_players = []
     for p in leaderboard:
