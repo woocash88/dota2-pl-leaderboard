@@ -1,13 +1,13 @@
 [
   {
-    "rank": 217,
+    "rank": 216,
     "name": "Ekki",
     "team_id": 9895247,
     "team_tag": "RE",
     "country": "gb"
   },
   {
-    "rank": 381,
+    "rank": 374,
     "name": "Kubanos"
   },
   {
@@ -18,64 +18,64 @@
     "country": "pl"
   },
   {
-    "rank": 806,
+    "rank": 803,
     "name": "Boskey",
     "country": "pl"
   },
   {
-    "rank": 970,
+    "rank": 1009,
     "name": "dave",
     "country": "pl"
   },
   {
-    "rank": 1151,
+    "rank": 1144,
     "name": "Jacob^"
   },
   {
-    "rank": 1377,
+    "rank": 1371,
     "name": "f",
     "country": "pl"
   },
   {
-    "rank": 1409,
+    "rank": 1406,
     "name": "Songoas",
     "team_id": 9512856,
     "team_tag": "PL",
     "country": "pl"
   },
   {
-    "rank": 1572,
+    "rank": 1570,
     "name": "Miyagi",
     "country": "af"
   },
   {
-    "rank": 1782,
+    "rank": 1785,
     "name": "Bueno",
     "country": "pl"
   },
   {
-    "rank": 2224,
+    "rank": 2225,
     "name": "zupa",
     "country": "pl"
   },
   {
-    "rank": 2747,
+    "rank": 2749,
     "name": "tardus",
     "country": "pl"
   },
   {
-    "rank": 2780,
+    "rank": 2783,
     "name": "zys",
     "team_id": 9860803,
     "team_tag": "star",
     "country": "pl"
   },
   {
-    "rank": 2785,
+    "rank": 2786,
     "name": "eejit"
   },
   {
-    "rank": 3014,
+    "rank": 3012,
     "name": "PoliG^",
     "team_id": 8196340,
     "team_tag": "TP",
@@ -86,36 +86,36 @@
     "name": "RaizQT"
   },
   {
-    "rank": 3363,
+    "rank": 3362,
     "name": "slime pidor",
     "country": "pl"
   },
   {
-    "rank": 3708,
+    "rank": 3529,
     "name": "Ciptok",
     "team_id": 9539470,
     "team_tag": "BOCIAN",
     "country": "pl"
   },
   {
-    "rank": 4187,
+    "rank": 4185,
     "name": "Zaop",
     "team_id": 1936688,
     "team_tag": "MT",
     "country": "pl"
   },
   {
-    "rank": 4440,
-    "name": "Duel maister",
-    "team_id": 10157237,
-    "team_tag": "KEO",
-    "country": "pl"
-  },
-  {
-    "rank": 4500,
+    "rank": 4285,
     "name": "Smok",
     "team_id": 10144737,
     "team_tag": "PUCK",
+    "country": "pl"
+  },
+  {
+    "rank": 4449,
+    "name": "Duel maister",
+    "team_id": 10157237,
+    "team_tag": "KEO",
     "country": "pl"
   },
   {
@@ -124,7 +124,7 @@
     "country": "pl"
   },
   {
-    "rank": 4597,
+    "rank": 4593,
     "name": "white",
     "country": "pl"
   }
