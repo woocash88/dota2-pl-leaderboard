@@ -1,6 +1,6 @@
 [
   {
-    "rank": 227,
+    "rank": 210,
     "name": "Ekki",
     "team_id": 9895247,
     "team_tag": "RE",
@@ -18,104 +18,104 @@
     "country": "pl"
   },
   {
-    "rank": 670,
+    "rank": 669,
     "name": "Boskey",
     "country": "pl"
   },
   {
-    "rank": 817,
+    "rank": 813,
     "name": "dave",
     "country": "pl"
   },
   {
-    "rank": 1247,
+    "rank": 1231,
     "name": "Jacob^"
   },
   {
-    "rank": 1341,
+    "rank": 1331,
     "name": "f",
     "country": "pl"
   },
   {
-    "rank": 1676,
+    "rank": 1769,
     "name": "Songoas",
     "team_id": 9512856,
     "team_tag": "PL",
     "country": "pl"
   },
   {
-    "rank": 1773,
+    "rank": 1775,
     "name": "Bueno",
     "country": "pl"
   },
   {
-    "rank": 1923,
+    "rank": 1917,
     "name": "Miyagi",
     "country": "af"
   },
   {
-    "rank": 2200,
+    "rank": 2196,
     "name": "zupa",
     "country": "pl"
   },
   {
-    "rank": 2744,
+    "rank": 2736,
     "name": "tardus",
     "country": "pl"
   },
   {
-    "rank": 2779,
+    "rank": 2776,
     "name": "zys",
     "team_id": 9860803,
     "team_tag": "star",
     "country": "pl"
   },
   {
-    "rank": 2786,
+    "rank": 2782,
     "name": "eejit"
   },
   {
-    "rank": 2839,
+    "rank": 2831,
     "name": "PoliG^",
     "team_id": 8196340,
     "team_tag": "TP",
     "country": "pl"
   },
   {
-    "rank": 3838,
-    "name": "RaizQT"
-  },
-  {
-    "rank": 3917,
+    "rank": 3320,
     "name": "Smok",
     "team_id": 10144737,
     "team_tag": "PUCK",
     "country": "pl"
   },
   {
-    "rank": 4152,
+    "rank": 4339,
     "name": "white",
     "country": "pl"
   },
   {
-    "rank": 4381,
+    "rank": 4361,
+    "name": "Ciptok",
+    "team_id": 9539470,
+    "team_tag": "BOCIAN",
+    "country": "pl"
+  },
+  {
+    "rank": 4395,
     "name": "Zaop",
     "team_id": 1936688,
     "team_tag": "MT",
     "country": "pl"
   },
   {
-    "rank": 4416,
+    "rank": 4427,
     "name": "Duel maister",
     "team_id": 10157237,
     "team_tag": "KEO",
     "country": "pl"
   },
   {
-    "rank": 4529,
-    "name": "Ciptok",
-    "team_id": 9539470,
-    "team_tag": "BOCIAN",
-    "country": "pl"
+    "rank": 4669,
+    "name": "RaizQT"
   }
 ]
