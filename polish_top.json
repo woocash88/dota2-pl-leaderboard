@@ -1,5 +1,10 @@
 [
   {
+    "rank": 15,
+    "name": "Ekki",
+    "country": "gb"
+  },
+  {
     "rank": 185,
     "name": "Ekki",
     "team_id": 9895247,
@@ -7,40 +12,40 @@
     "country": "gb"
   },
   {
-    "rank": 256,
+    "rank": 261,
     "name": "Kubanos"
   },
   {
-    "rank": 514,
+    "rank": 519,
     "name": "Boskey",
     "country": "pl"
   },
   {
-    "rank": 693,
+    "rank": 669,
     "name": "Szajtek",
     "team_id": 9539470,
     "team_tag": "BOCIAN",
     "country": "pl"
   },
   {
-    "rank": 740,
+    "rank": 741,
     "name": "dave",
     "country": "pl"
   },
   {
-    "rank": 935,
+    "rank": 933,
     "name": "Jacob^"
   },
   {
-    "rank": 1430,
-    "name": "Songoas",
-    "team_id": 9512856,
-    "team_tag": "PL",
+    "rank": 1323,
+    "name": "Bueno",
     "country": "pl"
   },
   {
-    "rank": 1472,
-    "name": "Bueno",
+    "rank": 1343,
+    "name": "Songoas",
+    "team_id": 9512856,
+    "team_tag": "PL",
     "country": "pl"
   },
   {
@@ -49,12 +54,12 @@
     "country": "pl"
   },
   {
-    "rank": 1784,
+    "rank": 1863,
     "name": "Miyagi",
     "country": "af"
   },
   {
-    "rank": 2020,
+    "rank": 2015,
     "name": "zupa",
     "country": "pl"
   },
@@ -64,59 +69,52 @@
     "country": "pl"
   },
   {
-    "rank": 2557,
+    "rank": 2569,
     "name": "PoliG^",
     "team_id": 8196340,
     "team_tag": "TP",
     "country": "pl"
   },
   {
-    "rank": 2738,
+    "rank": 2745,
     "name": "eejit"
   },
   {
-    "rank": 3096,
+    "rank": 2768,
     "name": "Duel maister",
     "team_id": 10157237,
     "team_tag": "KEO",
     "country": "pl"
   },
   {
-    "rank": 3402,
+    "rank": 3404,
     "name": "Ciptok",
     "team_id": 9539470,
     "team_tag": "BOCIAN",
     "country": "pl"
   },
   {
-    "rank": 3434,
+    "rank": 3430,
     "name": "zys",
     "team_id": 9860803,
     "team_tag": "star",
     "country": "pl"
   },
   {
-    "rank": 3825,
+    "rank": 3822,
     "name": "robertg9",
     "country": "pl"
   },
   {
-    "rank": 4237,
+    "rank": 4157,
     "name": "white",
     "country": "pl"
   },
   {
-    "rank": 4825,
+    "rank": 4828,
     "name": "Robert",
     "team_id": 7890909,
     "team_tag": " ",
-    "country": "pl"
-  },
-  {
-    "rank": 4840,
-    "name": "Zaop",
-    "team_id": 1936688,
-    "team_tag": "MT",
     "country": "pl"
   }
 ]
