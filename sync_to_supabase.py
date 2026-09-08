@@ -49,6 +49,23 @@ def run_sync():
         print("Empty or invalid player list, skipping sync.")
         sys.exit(1)
 
+    # Deduplicate by name BEFORE syncing anything: two different accounts
+    # (e.g. a smurf/alt) can share the same display name on Valve's
+    # leaderboard. Without this, the upsert loop below would process both
+    # under the same `name` key and whichever one runs last silently
+    # overwrites the other's row via PATCH — effectively random which
+    # rank "wins". Keep only the best (lowest) rank per name up front.
+    best_by_name = {}
+    for player in players:
+        name = (player.get("name") or "").strip()
+        rank = player.get("rank")
+        if not name or not isinstance(rank, int):
+            continue
+        if name not in best_by_name or rank < best_by_name[name]["rank"]:
+            best_by_name[name] = player
+
+    players = list(best_by_name.values())
+
     fetched_names = set()
     upserted = 0
     inserted = 0
