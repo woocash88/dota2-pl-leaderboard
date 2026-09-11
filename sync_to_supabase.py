@@ -113,22 +113,48 @@ def run_sync():
             print(f"Failed to upsert '{name}': {e}")
 
     # Cleanup: official (top-5000-only) entries no longer in the fetched list
-    # are deleted outright — a player can drop out via inactivity or by
-    # changing their nick (whitelist entries are matched by name too, so a
-    # rename has the same effect). Without a steam_id there's no way to keep
-    # tracking them, so leaving a null-rank "Nieznana ranga" row behind would
-    # just be a stale ghost entry. Rows that DO have a steam_id (the player
-    # joined the ranking themselves) are left alone — those are tracked via
-    # OpenDota independently of top-5000 membership.
+    # fall into two cases, handled differently:
+    #
+    # - No steam_id: this row exists ONLY because of this scraper, so once
+    #   it drops out of the fetched list (inactivity, or a rename — matched
+    #   by name too, so a rename has the same effect) there's no reason to
+    #   keep it around at all. Delete outright.
+    #
+    # - Has steam_id: the player also joined the site's own ranking, so the
+    #   row itself must survive regardless of top-5000 status — deleting it
+    #   would wipe their OpenDota-tracked win_rate/form/mmr too. But this
+    #   scraper IS the sole source of truth for whether they're STILL on
+    #   Valve's official leaderboard (OpenDota's own leaderboard_rank field
+    #   can lag behind Valve for a while after someone drops out — see the
+    #   matching comment in dota2-community-site's sync-player-stats.mjs,
+    #   which for this exact reason skips writing leaderboard_rank for any
+    #   row this scraper manages). So once such a player disappears from the
+    #   current fetch, clear leaderboard_rank/is_official_leaderboard here
+    #   instead of deleting the row — that's the only place this ever gets
+    #   reset back to null.
     stale_entries = request("GET", "?select=id,name,steam_id&is_official_leaderboard=eq.true") or []
     cleaned = 0
     for entry in stale_entries:
-        if entry["name"] not in fetched_names and not entry.get("steam_id"):
+        if entry["name"] in fetched_names:
+            continue
+
+        if not entry.get("steam_id"):
             try:
                 request("DELETE", f"?id=eq.{entry['id']}")
                 cleaned += 1
             except RuntimeError as e:
                 print(f"Failed to delete stale entry '{entry['name']}': {e}")
+        else:
+            try:
+                request(
+                    "PATCH",
+                    f"?id=eq.{entry['id']}",
+                    body={"leaderboard_rank": None, "is_official_leaderboard": False},
+                    prefer="return=minimal",
+                )
+                cleaned += 1
+            except RuntimeError as e:
+                print(f"Failed to clear leaderboard status for '{entry['name']}': {e}")
 
     print(
         "Summary:",
